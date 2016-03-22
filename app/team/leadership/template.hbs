@@ -1,8 +1,9 @@
 <h5>Leadership Team</h5>
+
 <ul>
-  <li>Person One</li>
-  <li>Person Two</li>
-  <li>Person Three</li>
+{{#each model as |employee|}}
+  <li>{{employee.name}}</li>
+{{/each}}
 </ul>
 
 {{#link-to 'team'}}Back{{/link-to}}
