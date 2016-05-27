@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'ember-template',
+    modulePrefix: 'ga-wdi-boston.ember-routing-dynamic',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
