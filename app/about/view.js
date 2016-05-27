@@ -1,6 +1,6 @@
 import Ember from 'ember';
 
-var i = 0;
+let i = 0;
 
 export default Ember.View.extend({
   click: function(event){
