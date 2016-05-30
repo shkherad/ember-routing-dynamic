@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('team', function(){
     this.route('engineering');
     this.route('leadership');
+    this.route('sales');
   });
 });
 
