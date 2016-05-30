@@ -248,9 +248,9 @@ pages for each product.
 
 <h2> Product Listings </h2>
 <ul>
-{{#each model as |product|}}
-  {{#link-to 'products.product' product tagName='li'}} {{product.name}} {{/link-to}}
-{{/each}}
+  {{#each model as |product|}}
+    {{#link-to 'product' product tagName='li'}} {{product.name}} {{/link-to}}
+  {{/each}}
 </ul>
 ```
 
