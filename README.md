@@ -14,6 +14,12 @@ By the end of this, developers should be able to:
 -   Create a Route object.
 -   Configure a Route to parse information from a URL.
 
+## Preparation
+
+1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
+    this repository.
+1.  Install dependencies with `npm install` and `bower install`.
+
 ## Code-Along: Routing to Resources
 
 In the previous lesson on Ember routing, you learned how to generate templates
