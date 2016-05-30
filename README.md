@@ -143,11 +143,8 @@ particular from the list.
 // app/router.js
 
 Router.map(function() {
-  this.route('products', function () {
-    this.route('product', { path: '/:product_id' })
-  });
-  // this.route('product', {path: '/products/:product_id'})
-
+  this.route('products');
+  this.route('product', {path: '/products/:product_id'})
   this.route('about');
   this.route('contact');
   this.route('team', function(){
@@ -172,11 +169,10 @@ could have chosen any name for that segment.
 As mentioned earlier, one of the two big responsibilities of the Route is to
 parse the URL and extract meaningful information - dynamic segments are the
 primary instance of this. Let's create a new Route for `product` (`ember g route
-product`) and move the created `product` folder into `products`. Remember, this
-is a nested route.
+product`).
 
 ```javascript
-// app/products/product/route.js
+// app/products/route.js
 
 import Ember from 'ember';
 
@@ -193,7 +189,7 @@ from `params` (`:product_id` is stored at `params.product_id`), we can use it to
 look up the data we want.
 
 ```javascript
-// app/products/product/route.js
+// app/product/route.js
 
 import Ember from 'ember';
 
@@ -218,7 +214,7 @@ export default Ember.Route.extend({
         manufacturer: 'George Foreman Grills',
         price: 15
       },
-    ].findBy('id', params.product_id);
+    ][params.product_id - 1];
   }
 });
 ```
@@ -227,7 +223,7 @@ Since our Route has a `model` method, we can now access the data from that
 method in the Route's corresponding Template.
 
 ```html
-<!-- app/products/product/template.hbs -->
+<!-- app/product/template.hbs -->
 
 <!-- {{outlet}} -->
 
