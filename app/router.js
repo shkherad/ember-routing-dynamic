@@ -7,9 +7,11 @@ const Router = Ember.Router.extend({
 
 Router.map(function () {
   this.route('about');
+  this.route('products');
   this.route('team', function() {
     this.route('leadership');
     this.route('engineering');
+    this.route('sales');
   });
   this.route('contact', function() {
     this.route('boston');
