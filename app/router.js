@@ -5,13 +5,15 @@ const Router = Ember.Router.extend({
   location: config.locationType,
 });
 
-Router.map(function() {
+Router.map(function () {
   this.route('about');
-  this.route('contact');
-  this.route('team', function(){
-    this.route('engineering');
+  this.route('team', function() {
     this.route('leadership');
-    this.route('sales');
+    this.route('engineering');
+  });
+  this.route('contact', function() {
+    this.route('boston');
+    this.route('nyc');
   });
 });
 
