@@ -1,0 +1,8 @@
+<!-- app/product/template.hbs -->
+
+<!-- {{outlet}} -->
+
+<h2> {{model.name}} Details </h2>
+<h5>${{model.price}}</h5>
+<p>Manufactured by <em>{{model.manufacturer}}</em></p>
+{{#link-to 'products'}}Back to Product Listings{{/link-to}}

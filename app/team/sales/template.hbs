@@ -1,0 +1,13 @@
+<!-- app/team/sales/template.hbs -->
+
+<!-- {{outlet}} -->
+<h3> Sales Team Members </h3>
+<div class="row">
+  {{#each model as |sale|}}
+    <div class="col-sm-4">
+      <h4>First Name: {{sale.givenName}}</h4>
+      <h4>Last Name: {{sale.surname}}</h4>
+      <h5>Title: {{sale.title}}</h5>
+    </div>
+  {{/each}}
+</div>
