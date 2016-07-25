@@ -1,13 +1,12 @@
 <!-- app/team/engineering/template.hbs -->
 
 <!-- {{outlet}} -->
+
 <h3> Engineering Team Members </h3>
 <div class="row">
   {{#each model as |engineer|}}
     <div class="col-sm-4">
-      <h4>First Name: {{engineer.givenName}}</h4>
-      <h4>Last Name: {{engineer.surname}}</h4>
-      <h5>Title: {{engineer.title}}</h5>
+      {{#link-to 'team.engineer' engineer tagName="h4"}} {{engineer.givenName}} {{/link-to}}
     </div>
   {{/each}}
 </div>

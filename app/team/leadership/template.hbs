@@ -5,9 +5,7 @@
 <div class="row">
   {{#each model as |leader|}}
     <div class="col-sm-4">
-      <h4>First Name: {{leader.givenName}}</h4>
-      <h4>Last Name: {{leader.surname}}</h4>
-      <h5>Title: {{leader.title}}</h5>
+      {{#link-to 'team.leader' leader tagName="h4"}} {{leader.givenName}} {{/link-to}}
     </div>
   {{/each}}
 </div>
