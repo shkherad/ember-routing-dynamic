@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
--   [ga-wdi-boston/ember-routing-static](https://github.com/ga-wdi-boston/ember-routing-static)
+-   [ga-wdi-boston.ember-routing-dynamic](https://github.com/ga-wdi-boston.ember-routing-dynamic)
 
 ## Objectives
 
